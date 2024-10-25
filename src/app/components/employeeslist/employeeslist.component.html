@@ -1,0 +1,40 @@
+<div class="container mt-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+          <th>Celular</th>
+          <th>Departamento</th>
+          <th>Jefe</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Salario</th>
+          <th>Comisiones</th>
+          <th>Manager</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.nombre }}</td>
+          <td>{{ employee.apellido }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.celular }}</td>
+          <td>{{ employee.departamento }}</td>
+          <td>{{ employee.jefe }}</td>
+          <td>{{ employee.fechaNacimiento }}</td>
+          <td>{{ employee.salario }}</td>
+          <td>{{ employee.comisiones }}</td>
+          <td>{{ employee.manager }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="editEmployee(employee)">Editar</button>
+            <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-success" routerLink="/form">Añadir Empleado</button>
+  </div>

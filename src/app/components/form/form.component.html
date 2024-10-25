@@ -1,0 +1,49 @@
+<div class="container mt-4">
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input type="text" class="form-control" formControlName="id" id="id">
+      </div>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" formControlName="nombre" id="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" formControlName="apellido" id="apellido">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="email" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="celular" class="form-label">Celular</label>
+        <input type="text" class="form-control" formControlName="celular" id="celular">
+      </div>
+      <div class="mb-3">
+        <label for="departamento" class="form-label">Departamento</label>
+        <input type="text" class="form-control" formControlName="departamento" id="departamento">
+      </div>
+      <div class="mb-3">
+        <label for="jefe" class="form-label">Jefe</label>
+        <input type="text" class="form-control" formControlName="jefe" id="jefe">
+      </div>
+      <div class="mb-3">
+        <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" formControlName="fechaNacimiento" id="fechaNacimiento">
+      </div>
+      <div class="mb-3">
+        <label for="salario" class="form-label">Salario</label>
+        <input type="text" class="form-control" formControlName="salario" id="salario">
+      </div>
+      <div class="mb-3">
+        <label for="comisiones" class="form-label">Comisiones</label>
+        <input type="text" class="form-control" formControlName="comisiones" id="comisiones">
+      </div>
+      <div class="mb-3">
+        <label for="manager" class="form-label">Manager</label>
+        <input type="text" class="form-control" formControlName="manager" id="manager">
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>
